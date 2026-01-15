@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /**
- * Copyright 2016-2020 IBM Corp. All Rights Reserved.
+ * Copyright 2016-2023 IBM Corp. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,8 +28,10 @@ function confirm(behavior) {
     }
 }
 
-const tjbot = new TJBot({ log: { level: 'silly' } });
-tjbot.initialize([TJBot.HARDWARE.SERVO]);
+const tjbot = new TJBot();
+tjbot.config.Log.level = 'silly';
+
+tjbot.initialize([TJBot.Hardware.SERVO]);
 
 console.log("Moving TJBot's arm back");
 tjbot.armBack();

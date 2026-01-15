@@ -1,0 +1,21 @@
+{
+  "name": "hello_tjbot",
+  "version": "3.0.0",
+  "description": "Hello world, TJBot style.",
+  "license": "Apache-2.0",
+  "author": "TJBot Community Edition <https://tjbot-ce.github.io>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "tjbot": "file:../../../node-tjbotlib"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0"
+  }
+}

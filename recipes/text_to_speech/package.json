@@ -1,7 +1,7 @@
 {
-  "name": "speech_to_text",
+  "name": "text_to_speech",
   "version": "3.0.0",
-  "description": "Change the color of TJBot's LED with your voice!",
+  "description": "Make your TJBot speak!",
   "keywords": [
     "tjbot"
   ],
@@ -22,6 +22,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "readline-sync": "^1.4.10",
     "tjbot": "file:../../../node-tjbotlib"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 {
-  "name": "speech_to_text",
+  "name": "tj_the_translator",
   "version": "3.0.0",
-  "description": "Change the color of TJBot's LED with your voice!",
+  "description": "Translate to other languages with TJBot using watsonx.ai!",
   "keywords": [
     "tjbot"
   ],
@@ -11,17 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ibmtjbot/tjbot.git"
+    "url": "git+ssh://git@github.com/ibmtjbot/tjbot.git"
   },
   "license": "Apache-2.0",
   "author": "TJBot <https://ibmtjbot.github.io>",
   "type": "module",
   "main": "index.mjs",
   "scripts": {
-    "start": "node index.mjs",
+    "start": "sudo node index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@ibm-cloud/watsonx-ai": "^1.1.2",
     "tjbot": "file:../../../node-tjbotlib"
   },
   "devDependencies": {

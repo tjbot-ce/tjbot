@@ -1,6 +1,5 @@
-/* eslint-disable no-undef */
 /**
- * Copyright 2016-2023 IBM Corp. All Rights Reserved.
+ * Copyright 2026-present TJBot Contributors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,24 +14,13 @@
  * limitations under the License.
  */
 
-import rl from 'readline-sync';
 import TJBot from 'tjbot';
 
-function confirm(behavior) {
-    let answer = rl.question(`Did TJBot ${behavior} (Y/n)? `);
-    if (answer === '') {
-        answer = 'y';
+const tj = new TJBot({
+    hardware: {
+        'speaker': true
     }
-    if (answer.toLowerCase() !== 'y') {
-        throw new Error(`TJBot did not ${behavior}`);
-    }
-}
+});
 
-const sound = '/usr/share/sounds/alsa/Front_Center.wav';
-const tjbot = new TJBot();
-tjbot.config.Log.level = 'silly';
-
-tjbot.initialize([TJBot.Hardware.SPEAKER]);
-await tjbot.play(sound);
-
-confirm('play the "Front Center" sound');
+/* Customization 1: Change the greeting message */
+tj.speak('Hello! My name is TJBot and it is very nice to meet you!');

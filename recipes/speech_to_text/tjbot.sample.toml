@@ -1,0 +1,17 @@
+[Recipe]
+useNeoPixelLED = false     # set to true if using a NeoPixel LED
+useCommonAnodeLED = false  # set to true if using a Common Anode LED
+
+[Log]
+level = 'info' # change this to 'debug' if you want to see more detail in the logs
+
+[Listen]
+# use `arecord -l` to list audio input devices
+device = 'plughw:2,0' # plugged-in USB card 2, device 0
+
+[Speak]
+# use `aplay -l` to list audio output devices
+device = 'plughw:0,0' # plugged-in USB card 0, device 0
+
+# see https://cloud.ibm.com/docs/text-to-speech?topic=text-to-speech-voices for available voices
+voice = 'en-US_MichaelV3Voice'
