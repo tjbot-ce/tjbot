@@ -1,0 +1,23 @@
+# Recipe-specific configuration
+
+# Customization 1: Add a new action
+actions = [
+    "touch your toes",
+    "jump up and down",
+    "put your hands on your head",
+    "put your hands on your hips",
+    "touch your nose",
+    "touch your ears",
+    "touch your elbow",
+    "touch your knees",
+    "touch your shoulders",
+    "stand on one leg",
+    "spin around",
+    "clap your hands",
+    "stomp your feet",
+    "raise your right hand",
+    "raise your left hand",
+    "raise both hands",
+]
+
+tjDidntSayLikelihood = 0.33

@@ -1,0 +1,22 @@
+# Recipe-specific configuration
+# Add any custom configuration options your recipe needs here.
+apiKey = '' # FILL IN WITH YOUR WATSONX.AI API KEY
+projectId = '' # FILL IN WITH YOUR WATSONX.AI PROJECT ID
+serviceUrl = 'https://us-south.ml.cloud.ibm.com' # CHANGE THIS IF YOUR SERVICEURL IS IN A DIFFERENT REGION
+serviceVersion = '2024-05-31'
+
+# Customization 1: change the LLM model
+# see https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-models.html?context=wx&audience=wdp
+# for a list of supported large language models.
+modelId = 'meta-llama/llama-4-maverick-17b-128e-instruct-fp8'
+version = '2023-05-29'
+
+# Customization 2: change the LLM parameters
+# see https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-model-parameters.html?context=wx&audience=wdp
+# for more information on model parameters.
+# modelDecodingMethod = 'greedy' # options are 'greedy' or 'sample'
+# modelTemperature = 0.7
+# modelRandomSeed = 42
+# modelMinNewTokens = 0
+# modelMaxNewTokens = 200
+# modelRepetitionPenalty = 1.0
